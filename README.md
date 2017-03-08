@@ -1,4 +1,5 @@
 # react-perfect-image
+Renders an image that fills its container width and has the correct aspect ratio before the image source has loaded (no page reflow!). Also supports dynamic insertion of width and height values into src url so that you always fetch the correct image for the given screen size.
 
 ## Demo
 <a href="https://unsplash.now.sh">unsplash.now.sh</a>
