@@ -1,7 +1,7 @@
 import React from 'react';
 import Block from './ImageBlock';
 
-const Image = ({ src, widthHeightRatio, parseSrc, parseSrcWidth, parseSrcAllowedWidths, parseSrcDoubleForRetina, children, ...props }) => {
+const Image = ({ src, widthHeightRatio, parseSrc, parseSrcWidth, parseSrcAllowedWidths, parseSrcDoubleForRetina, children, displaySrcWidth, ...props }) => {
 
   /** If src parsing is enabled ...
     * We replace width and height in src url
@@ -42,7 +42,7 @@ const Image = ({ src, widthHeightRatio, parseSrc, parseSrcWidth, parseSrcAllowed
         <img src={src} style={style} {...props} /> 
       }
       {children}
-      { parseSrcWidth && 
+      { displaySrcWidth && parseSrcWidth && 
         <div style={{ position: 'absolute', bottom: 10, right: 10, backgroundColor: '#fff', color: '#000', padding: '0.3em 0.6em', opacity: '0.6' }}>
           Img: {parseSrcWidth}px { parseSrcDoubleForRetina && isHighDensity() && <span>(@2x)</span> }
         </div>
