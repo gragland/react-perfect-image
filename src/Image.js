@@ -6,7 +6,7 @@ const Image = ({ src, widthHeightRatio, parseSrc, parseSrcWidth, parseSrcAllowed
   /** If src parsing is enabled ...
     * We replace width and height in src url
     * Skip rendering <img> if no props.parseSrcWidth (may be delayed depending on parent logic)
-    * Always render <block> so that component has correct width and height
+    * Always render <Block> so that component has correct width and height
     * Example valid src urls:
     *  - https://source.unsplash.com/oMpAz-DN-9I/{width}x{height}
     *  - https://example.com/images/logo_{width}.png 

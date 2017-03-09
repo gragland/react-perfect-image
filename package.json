@@ -1,11 +1,11 @@
 {
   "name": "react-perfect-image",
-  "version": "0.0.2",
-  "description": "",
+  "version": "0.0.3",
+  "description": "The perfect React image component.",
   "main": "lib/image.js",
   "scripts": {
     "build": "npm run build-library && npm run build-script",
-    "build-library": "NODE_ENV=production TYPE=library webpack --config webpack.config.js",
+    "build-library": "NODE_ENV=production webpack --config webpack.config.js",
     "build-script": "NODE_ENV=production TYPE=script webpack --config webpack.config.js",
     "prepublish": "npm run build"
   },
@@ -19,20 +19,23 @@
     "babel-preset-react": "6.16.0",
     "babel-plugin-transform-runtime": "^6.15.0",
     "babel-plugin-transform-object-rest-spread": "^6.19.0",
-    "url-loader": "^0.5.7",
     "webpack": "1.13.3"
   },
   "repository": {
     "type": "git",
-    "url": ""
+    "url": "https://github.com/gragland/react-perfect-image"
   },
   "author": "Gabe Ragland <gabe.ragland@gmail.com>",
   "license": "MIT",
   "bugs": {
-    "url": ""
+    "url": "https://github.com/gragland/react-perfect-image/issues"
   },
   "keywords": [
-
+    "react",
+    "component",
+    "image",
+    "media",
+    "responsive"
   ],
   "homepage": ""
 }

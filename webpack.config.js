@@ -18,8 +18,6 @@ const common = {
   }
 };
 
-// Build for npm package
-// Parent project should run any minification plugins
 const library = {
   output: {
     path: __dirname + '/lib/',
@@ -49,11 +47,10 @@ const script = {
 
 let config;
 
-if (process.env.TYPE === 'library'){
-  config = Object.assign(common, library);
-}else
 if (process.env.TYPE === 'script'){
   config = Object.assign(common, script);
+}else{
+  config = Object.assign(common, library);
 }
 
 module.exports = config;
