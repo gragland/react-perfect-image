@@ -26,20 +26,21 @@ import Image from 'react-perfect-image';
 
 const Photo = ({ data, parentWidth }) => {
 
-	const allowedSrcWidths = [ 200, 300, 400, 500 ];
-
-	return (
-	  <a href={data.links.html}>
-	    <Image 
+  const allowedSrcWidths = [ 200, 300, 400, 500 ];
+ 
+  return (
+    <a href={data.links.html}>
+      <Image 
         src={`https://source.unsplash.com/${data.id}/{width}x{height}`} 
         parseSrc={true} 
         parseSrcWidth={parentWidth} 
         parseSrcAllowedWidths={allowedSrcWidths} 
         parseSrcDoubleForRetina={true}
         displaySrcWidth={true}
-        widthHeightRatio={1/1} />
-	  </a>
-	);
+        widthHeightRatio={1/1}
+        alt={`A photo by ${data.user.name}`/>
+    </a>
+  );
   
 };
 ```
