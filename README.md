@@ -38,7 +38,7 @@ const Photo = ({ data, parentWidth }) => {
         parseSrcDoubleForRetina={true}
         displaySrcWidth={true}
         widthHeightRatio={1/1}
-        title={`A photo by ${data.user.name}`/>
+        title={`A photo by ${data.user.name}`}/>
     </a>
   );
   
