@@ -2,7 +2,7 @@ const webpack = require('webpack');
 
 const common = {
   entry: {
-    image: './src/image.js'
+    image: './src/Image.js'
   },
   module: {
     loaders: [
@@ -14,7 +14,12 @@ const common = {
     ]
   },
   externals: {
-    react: 'React'
+    'react': {
+      'root': 'React',
+      'commonjs2': 'react',
+      'commonjs': 'react',
+      'amd': 'react'
+    }
   }
 };
 

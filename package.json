@@ -1,6 +1,6 @@
 {
   "name": "react-perfect-image",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "The perfect React image component.",
   "main": "lib/image.js",
   "scripts": {
